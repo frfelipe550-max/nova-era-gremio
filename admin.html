@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Administrativo — Nova Era | Grêmio Estudantil</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/admin.css" />
+</head>
+<body class="admin-body">
+  <header class="admin-header">
+    <div class="container admin-header-inner">
+      <div class="admin-brand">
+        <div class="brand-logo-slot">
+          <img
+            src="./assets/logo/logo-placeholder.svg"
+            alt="Logotipo Nova Era"
+            width="42"
+            height="42"
+          />
+        </div>
+        <div>
+          <h1>Painel Administrativo — Nova Era</h1>
+          <p>Gerenciamento local de comentários e sincronização JSON</p>
+        </div>
+      </div>
+
+      <div class="admin-header-actions">
+        <a href="./index.html" class="btn btn-outline-light btn-sm">&larr; Voltar ao site</a>
+        <button type="button" id="admin-logout-btn" class="btn btn-accent btn-sm" hidden>Bloquear painel</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container admin-main">
+    <section id="admin-login-section" class="admin-login-wrapper">
+      <div class="card admin-login-card">
+        <h2>Acesso da Equipe Nova Era</h2>
+        <p class="admin-login-desc">
+          Informe a senha configurada em <code>data/config.json</code> para gerenciar manifestações e respostas.
+        </p>
+
+        <div class="security-warning" role="alert">
+          <strong>Aviso importante de segurança:</strong>
+          Esta proteção por senha é apenas uma <strong>barreira visual</strong> executada no navegador.
+          Como este site é 100% estático (sem servidor backend), qualquer pessoa com conhecimento técnico pode
+          inspecionar os arquivos públicos do projeto. Não utilize senhas pessoais ou confidenciais.
+        </div>
+
+        <form id="admin-login-form" novalidate>
+          <div class="form-group">
+            <label for="admin-password">Senha de acesso da equipe</label>
+            <input
+              type="password"
+              id="admin-password"
+              autocomplete="current-password"
+              placeholder="Digite a senha configurada"
+              required
+            />
+          </div>
+          <p id="admin-login-error" class="field-error" aria-live="polite"></p>
+          <button type="submit" class="btn btn-primary btn-block">Entrar no painel</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="admin-panel-section" hidden>
+      <div class="security-warning compact" role="note">
+        <strong>Fluxo de publicação coletiva:</strong> As edições, exclusões e respostas feitas aqui ficam
+        salvas no navegador (<code>localStorage</code>). Para publicar para todos os estudantes, clique em
+        <strong>Exportar comentarios.json</strong> e substitua o arquivo <code>data/comentarios.json</code>
+        no repositório do site.
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Total de manifestações</span>
+          <strong class="stat-value" id="stat-total">0</strong>
+        </div>
+        <div class="stat-card stat-answered">
+          <span class="stat-label">Respondidos</span>
+          <strong class="stat-value" id="stat-respondidos">0</strong>
+        </div>
+        <div class="stat-card stat-pending">
+          <span class="stat-label">Aguardando resposta</span>
+          <strong class="stat-value" id="stat-pendentes">0</strong>
+        </div>
+        <div class="stat-card stat-sync">
+          <span class="stat-label">Alterações locais pendentes</span>
+          <strong class="stat-value" id="stat-pendentes-sync">0</strong>
+        </div>
+      </div>
+
+      <div class="card admin-toolbar">
+        <div class="toolbar-filters">
+          <div class="form-group no-margin">
+            <label for="admin-search" class="sr-only">Buscar comentários</label>
+            <input
+              type="search"
+              id="admin-search"
+              placeholder="Buscar por nome, turma, ID ou mensagem..."
+            />
+          </div>
+          <div class="form-group no-margin">
+            <label for="admin-filter-status" class="sr-only">Filtrar por situação</label>
+            <select id="admin-filter-status">
+              <option value="todos">Todos os comentários</option>
+              <option value="pendentes">Apenas pendentes</option>
+              <option value="respondidos">Apenas respondidos</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="toolbar-json-actions">
+          <button type="button" id="btn-exportar-json" class="btn btn-accent">
+            Exportar comentarios.json
+          </button>
+          <button type="button" id="btn-importar-json" class="btn btn-primary">
+            Importar comentarios.json
+          </button>
+          <input type="file" id="input-importar-json" accept=".json,application/json" hidden />
+          <button type="button" id="btn-resetar-local" class="btn btn-outline-danger">
+            Sincronizar com JSON publicado
+          </button>
+        </div>
+      </div>
+
+      <div id="admin-status" class="status-message" aria-live="polite"></div>
+      <div id="admin-comentarios-lista" class="admin-list"></div>
+    </section>
+  </main>
+
+  <div id="admin-reply-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="reply-modal-title" hidden>
+    <div class="modal-backdrop" data-close-reply></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="admin-reply-close" aria-label="Fechar modal">&times;</button>
+      <h3 id="reply-modal-title" class="modal-title">Resposta Oficial — Chapa Nova Era</h3>
+      <p id="reply-autor-info" class="modal-meta"></p>
+      <blockquote id="reply-mensagem-original" class="original-quote"></blockquote>
+
+      <form id="admin-reply-form">
+        <input type="hidden" id="reply-id" />
+        <div class="form-group">
+          <label for="reply-texto">Texto da resposta oficial</label>
+          <textarea id="reply-texto" rows="4" maxlength="800" required placeholder="Escreva a resposta oficial da chapa Nova Era..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="reply-data">Data da resposta</label>
+          <input type="date" id="reply-data" required />
+        </div>
+        <div class="modal-actions">
+          <button type="button" id="admin-reply-remove" class="btn btn-outline-danger" hidden>Remover resposta</button>
+          <div class="modal-actions-right">
+            <button type="button" id="admin-reply-cancel" class="btn btn-secondary">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Salvar resposta</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="admin-edit-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="edit-modal-title" hidden>
+    <div class="modal-backdrop" data-close-edit></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="admin-edit-close" aria-label="Fechar modal">&times;</button>
+      <h3 id="edit-modal-title" class="modal-title">Editar Comentário</h3>
+
+      <form id="admin-edit-form">
+        <input type="hidden" id="edit-id" />
+        <div class="form-group">
+          <label for="edit-nome">Nome do estudante</label>
+          <input type="text" id="edit-nome" maxlength="80" required />
+        </div>
+        <div class="form-group">
+          <label for="edit-turma">Turma</label>
+          <input type="text" id="edit-turma" maxlength="40" required />
+        </div>
+        <div class="form-group">
+          <label for="edit-data">Data</label>
+          <input type="date" id="edit-data" required />
+        </div>
+        <div class="form-group">
+          <label for="edit-mensagem">Mensagem</label>
+          <textarea id="edit-mensagem" rows="4" maxlength="500" required></textarea>
+        </div>
+        <div class="modal-actions-right">
+          <button type="button" id="admin-edit-cancel" class="btn btn-secondary">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar alterações</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="admin-delete-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-modal-title" hidden>
+    <div class="modal-backdrop" data-close-delete></div>
+    <div class="modal-dialog modal-dialog-sm">
+      <button type="button" class="modal-close" id="admin-delete-close" aria-label="Fechar modal">&times;</button>
+      <h3 id="delete-modal-title" class="modal-title">Excluir comentário?</h3>
+      <p>Esta ação removerá a manifestação da lista local. Lembre-se de exportar o JSON para atualizar a versão pública.</p>
+      <blockquote id="delete-preview" class="original-quote"></blockquote>
+      <div class="modal-actions-right">
+        <button type="button" id="admin-delete-cancel" class="btn btn-secondary">Cancelar</button>
+        <button type="button" id="admin-delete-confirm" class="btn btn-danger">Excluir definitivamente</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="./js/comentarios.js"></script>
+  <script src="./js/admin.js"></script>
+</body>
+</html>
