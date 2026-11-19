@@ -2,67 +2,67 @@
   "integrantes": [
     {
       "id": "membro-01",
-      "nome": "Neco",
-      "turma": "Chapa Nova Era",
-      "cargo": "Secretário Geral",
-      "foto": "./assets/membros/neco.jpg",
-      "descricao": "Secretário Geral da chapa Nova Era, responsável pela organização das pautas e atuação geral do Grêmio Estudantil."
-    },
-    {
-      "id": "membro-02",
       "nome": "Alicia",
       "turma": "Chapa Nova Era",
       "cargo": "Vice-Secretária Geral",
-      "foto": "./assets/membros/alicia.jpg",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-16 às 12:10:30 (1).jpeg",
       "descricao": "Vice-Secretária Geral da chapa Nova Era, apoiando a secretaria e o acompanhamento das demandas estudantis."
     },
     {
-      "id": "membro-03",
-      "nome": "Fhellipe",
+      "id": "membro-02",
+      "nome": "Otávio",
       "turma": "Chapa Nova Era",
-      "cargo": "Coordenador de Comunicação",
-      "foto": "./assets/membros/fhellipe.jpg",
-      "descricao": "Responsável pela comunicação, divulgação nas redes sociais e contato com os estudantes."
+      "cargo": "Secretário Geral",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-16 às 12:10:30.jpeg",
+      "descricao": "Secretário Geral da chapa Nova Era, responsável pela organização das pautas e atuação geral do Grêmio Estudantil."
     },
     {
-      "id": "membro-04",
+      "id": "membro-03",
       "nome": "Kevelyn",
       "turma": "Chapa Nova Era",
       "cargo": "Coordenadora Artística",
-      "foto": "./assets/membros/kevelyn.jpg",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-17 às 21:48:31 (1).jpeg",
       "descricao": "Responsável por atividades culturais, apresentações, eventos artísticos e valorização dos talentos da escola."
     },
     {
-      "id": "membro-05",
+      "id": "membro-04",
       "nome": "Everson",
       "turma": "Chapa Nova Era",
       "cargo": "Coordenador Comunitário",
-      "foto": "./assets/membros/everson.jpg",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-17 às 21:48:31 (2).jpeg",
       "descricao": "Atua na integração da comunidade escolar e em ações solidárias para uma escola ainda melhor."
     },
     {
-      "id": "membro-06",
+      "id": "membro-05",
       "nome": "Serena",
       "turma": "Chapa Nova Era",
       "cargo": "Coordenadora de Convivência Escolar",
-      "foto": "./assets/membros/serena.jpg",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-17 às 21:48:31 (3).jpeg",
       "descricao": "Dedica-se a construir uma escola mais unida, acolhedora e respeitosa para todos os estudantes."
     },
     {
-      "id": "membro-07",
+      "id": "membro-06",
       "nome": "Mateus Trindade",
       "turma": "Chapa Nova Era",
       "cargo": "Coordenador Desportivo",
-      "foto": "./assets/membros/mateus-trindade.jpg",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-17 às 21:48:31.jpeg",
       "descricao": "Coordena os jogos interclasses, torneios e iniciativas esportivas do Grêmio Estudantil."
     },
     {
-      "id": "membro-08",
+      "id": "membro-07",
       "nome": "Lívia Reginato",
       "turma": "Chapa Nova Era",
       "cargo": "Coordenadora de Saúde e Meio Ambiente",
-      "foto": "./assets/membros/livia-reginato.jpg",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-17 às 21:49:13.jpeg",
       "descricao": "Promove ações de bem-estar, conscientização sobre saúde, sustentabilidade e cuidado com o meio ambiente."
+    },
+    {
+      "id": "membro-08",
+      "nome": "Fhellipe",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenador de Comunicação",
+      "foto": "./assets/membros/Imagem do WhatsApp 2026-11-19 às 7:07:40 AM.jpeg",
+      "descricao": "Responsável pela comunicação, divulgação nas redes sociais e contato com os estudantes."
     }
   ]
 }
