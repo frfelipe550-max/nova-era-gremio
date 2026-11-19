@@ -2,51 +2,67 @@
   "integrantes": [
     {
       "id": "membro-01",
-      "nome": "Integrante Exemplo 01",
-      "turma": "3º Ano A (Exemplo)",
-      "cargo": "Presidente",
-      "foto": "./assets/membros/presidente.jpg",
-      "descricao": "Espaço reservado para a apresentação do(a) Presidente da chapa Nova Era."
+      "nome": "Neco",
+      "turma": "Chapa Nova Era",
+      "cargo": "Secretário Geral",
+      "foto": "./assets/membros/neco.jpg",
+      "descricao": "Secretário Geral da chapa Nova Era, responsável pela organização das pautas e atuação geral do Grêmio Estudantil."
     },
     {
       "id": "membro-02",
-      "nome": "Integrante Exemplo 02",
-      "turma": "3º Ano B (Exemplo)",
-      "cargo": "Vice-Presidente",
-      "foto": "./assets/membros/vice-presidente.jpg",
-      "descricao": "Espaço reservado para a apresentação do(a) Vice-Presidente da chapa Nova Era."
+      "nome": "Alicia",
+      "turma": "Chapa Nova Era",
+      "cargo": "Vice-Secretária Geral",
+      "foto": "./assets/membros/alicia.jpg",
+      "descricao": "Vice-Secretária Geral da chapa Nova Era, apoiando a secretaria e o acompanhamento das demandas estudantis."
     },
     {
       "id": "membro-03",
-      "nome": "Integrante Exemplo 03",
-      "turma": "2º Ano A (Exemplo)",
-      "cargo": "Secretaria Geral",
-      "foto": "./assets/membros/membro-01.jpg",
-      "descricao": "Responsável por atas, organização de pautas e comunicação interna."
+      "nome": "Fhellipe",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenador de Comunicação",
+      "foto": "./assets/membros/fhellipe.jpg",
+      "descricao": "Responsável pela comunicação, divulgação nas redes sociais e contato com os estudantes."
     },
     {
       "id": "membro-04",
-      "nome": "Integrante Exemplo 04",
-      "turma": "2º Ano C (Exemplo)",
-      "cargo": "Tesouraria",
-      "foto": "./assets/membros/membro-02.jpg",
-      "descricao": "Responsável pelo controle transparente de recursos e prestações de contas."
+      "nome": "Kevelyn",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenadora Artística",
+      "foto": "./assets/membros/kevelyn.jpg",
+      "descricao": "Responsável por atividades culturais, apresentações, eventos artísticos e valorização dos talentos da escola."
     },
     {
       "id": "membro-05",
-      "nome": "Integrante Exemplo 05",
-      "turma": "1º Ano A (Exemplo)",
-      "cargo": "Diretoria de Cultura e Eventos",
-      "foto": "./assets/membros/membro-03.jpg",
-      "descricao": "Coordenação de feiras culturais, gincanas e ações artísticas na escola."
+      "nome": "Everson",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenador Comunitário",
+      "foto": "./assets/membros/everson.jpg",
+      "descricao": "Atua na integração da comunidade escolar e em ações solidárias para uma escola ainda melhor."
     },
     {
       "id": "membro-06",
-      "nome": "Integrante Exemplo 06",
-      "turma": "1º Ano B (Exemplo)",
-      "cargo": "Diretoria de Esportes",
-      "foto": "./assets/membros/membro-04.jpg",
-      "descricao": "Organização de interclasses, torneios e incentivo às práticas esportivas."
+      "nome": "Serena",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenadora de Convivência Escolar",
+      "foto": "./assets/membros/serena.jpg",
+      "descricao": "Dedica-se a construir uma escola mais unida, acolhedora e respeitosa para todos os estudantes."
+    },
+    {
+      "id": "membro-07",
+      "nome": "Mateus Trindade",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenador Desportivo",
+      "foto": "./assets/membros/mateus-trindade.jpg",
+      "descricao": "Coordena os jogos interclasses, torneios e iniciativas esportivas do Grêmio Estudantil."
+    },
+    {
+      "id": "membro-08",
+      "nome": "Lívia Reginato",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenadora de Saúde e Meio Ambiente",
+      "foto": "./assets/membros/livia-reginato.jpg",
+      "descricao": "Promove ações de bem-estar, conscientização sobre saúde, sustentabilidade e cuidado com o meio ambiente."
     }
   ]
 }
