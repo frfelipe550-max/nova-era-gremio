@@ -1,0 +1,28 @@
+{
+  "noticias": [
+    {
+      "id": "noticia-01",
+      "titulo": "[Exemplo] Posse oficial da Chapa Nova Era no Grêmio Estudantil",
+      "tipo": "Comunicado",
+      "data": "2026-11-10",
+      "imagem": "",
+      "conteudo": "Publicação demonstrativa: A chapa Nova Era assumiu oficialmente a representação estudantil deste ano. Agradecemos a confiança de cada estudante e reforçamos que nosso portal já está aberto para receber ideias e sugestões."
+    },
+    {
+      "id": "noticia-02",
+      "titulo": "[Exemplo] Convite para 1ª Reunião Aberta com Representantes de Turma",
+      "tipo": "Reunião",
+      "data": "2026-11-14",
+      "imagem": "./assets/projetos/placeholder-projeto.svg",
+      "conteudo": "Publicação demonstrativa: Convidamos os representantes de todas as turmas para nossa primeira reunião de alinhamento. Pautas: calendário de eventos, demandas de infraestrutura e organização dos grupos de trabalho."
+    },
+    {
+      "id": "noticia-03",
+      "titulo": "[Exemplo] Enquete de temas para a Semana Cultural",
+      "tipo": "Evento",
+      "data": "2026-11-18",
+      "imagem": "",
+      "conteudo": "Publicação demonstrativa: Queremos saber quais oficinas, apresentações e atividades culturais você gostaria de ver na próxima Semana Cultural! Deixe sua sugestão na seção de Participação Estudantil logo abaixo."
+    }
+  ]
+}

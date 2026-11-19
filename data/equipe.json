@@ -1,0 +1,52 @@
+{
+  "integrantes": [
+    {
+      "id": "membro-01",
+      "nome": "Integrante Exemplo 01",
+      "turma": "3º Ano A (Exemplo)",
+      "cargo": "Presidente",
+      "foto": "./assets/membros/presidente.jpg",
+      "descricao": "Espaço reservado para a apresentação do(a) Presidente da chapa Nova Era."
+    },
+    {
+      "id": "membro-02",
+      "nome": "Integrante Exemplo 02",
+      "turma": "3º Ano B (Exemplo)",
+      "cargo": "Vice-Presidente",
+      "foto": "./assets/membros/vice-presidente.jpg",
+      "descricao": "Espaço reservado para a apresentação do(a) Vice-Presidente da chapa Nova Era."
+    },
+    {
+      "id": "membro-03",
+      "nome": "Integrante Exemplo 03",
+      "turma": "2º Ano A (Exemplo)",
+      "cargo": "Secretaria Geral",
+      "foto": "./assets/membros/membro-01.jpg",
+      "descricao": "Responsável por atas, organização de pautas e comunicação interna."
+    },
+    {
+      "id": "membro-04",
+      "nome": "Integrante Exemplo 04",
+      "turma": "2º Ano C (Exemplo)",
+      "cargo": "Tesouraria",
+      "foto": "./assets/membros/membro-02.jpg",
+      "descricao": "Responsável pelo controle transparente de recursos e prestações de contas."
+    },
+    {
+      "id": "membro-05",
+      "nome": "Integrante Exemplo 05",
+      "turma": "1º Ano A (Exemplo)",
+      "cargo": "Diretoria de Cultura e Eventos",
+      "foto": "./assets/membros/membro-03.jpg",
+      "descricao": "Coordenação de feiras culturais, gincanas e ações artísticas na escola."
+    },
+    {
+      "id": "membro-06",
+      "nome": "Integrante Exemplo 06",
+      "turma": "1º Ano B (Exemplo)",
+      "cargo": "Diretoria de Esportes",
+      "foto": "./assets/membros/membro-04.jpg",
+      "descricao": "Organização de interclasses, torneios e incentivo às práticas esportivas."
+    }
+  ]
+}

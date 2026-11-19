@@ -1,0 +1,246 @@
+.admin-body {
+  background-color: var(--gray-100);
+  min-height: 100vh;
+}
+
+.admin-header {
+  background: linear-gradient(90deg, var(--blue-950) 0%, var(--blue-800) 100%);
+  color: var(--white);
+  border-bottom: 3px solid var(--yellow-500);
+  padding: 0.9rem 0;
+}
+
+.admin-header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.admin-brand h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--yellow-400);
+}
+
+.admin-brand p {
+  margin: 0.1rem 0 0;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.admin-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.admin-main {
+  padding: 2rem 0 4rem;
+}
+
+.admin-login-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.admin-login-card {
+  width: min(520px, 100%);
+}
+
+.admin-login-card h2 {
+  margin: 0 0 0.5rem;
+  color: var(--blue-950);
+}
+
+.admin-login-desc {
+  margin: 0 0 1.1rem;
+  color: var(--gray-500);
+  font-size: 0.94rem;
+}
+
+.security-warning {
+  background-color: var(--yellow-100);
+  border: 1px solid var(--yellow-500);
+  border-left: 5px solid var(--yellow-600);
+  color: var(--gray-900);
+  padding: 0.95rem 1.1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+}
+
+.security-warning.compact {
+  background-color: var(--blue-50);
+  border-color: var(--blue-100);
+  border-left-color: var(--blue-800);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+  border-top: 4px solid var(--blue-800);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-card.stat-answered {
+  border-top-color: var(--success);
+}
+
+.stat-card.stat-pending {
+  border-top-color: var(--yellow-500);
+}
+
+.stat-card.stat-sync {
+  border-top-color: var(--blue-600);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gray-500);
+  margin-bottom: 0.35rem;
+}
+
+.stat-value {
+  font-size: 1.85rem;
+  color: var(--blue-950);
+}
+
+.admin-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.15rem 1.25rem;
+}
+
+.toolbar-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 260px;
+}
+
+.toolbar-filters .form-group {
+  flex: 1;
+  min-width: 190px;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.toolbar-json-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-comment-card {
+  background-color: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-comment-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.admin-comment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comment-id-tag {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.75rem;
+  background-color: var(--gray-100);
+  color: var(--gray-700);
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+}
+
+.admin-comment-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.original-quote {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  background-color: var(--gray-50);
+  border-left: 4px solid var(--blue-700);
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  color: var(--gray-700);
+}
+
+.modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.modal-actions-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  margin-left: auto;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
