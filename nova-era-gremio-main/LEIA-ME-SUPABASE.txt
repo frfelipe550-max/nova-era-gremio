@@ -1,0 +1,30 @@
+NOVA ERA — INTEGRAÇÃO SUPABASE
+
+O que foi alterado
+- Comentários públicos são enviados e lidos pela tabela public.comentarios.
+- A lista pública atualiza quando há mudanças no banco (Realtime precisa estar habilitado para a tabela).
+- O painel usa Supabase Auth com e-mail e senha; a senha antiga em data/config.json foi removida.
+- Responder, editar e excluir exigem sessão autenticada.
+
+CONFIGURAÇÃO
+1. Confira js/supabase-config.js. Ele já contém o Project URL e a Publishable Key fornecidos no chat.
+   Nunca substitua essa chave por sb_secret_... ou service_role.
+2. No Supabase, abra Database > Replication (ou Publications) e habilite Realtime para public.comentarios.
+3. No SQL Editor, execute SUPABASE_SETUP.sql.
+4. Em Authentication > Settings > Signups, desative cadastros públicos.
+5. Em Authentication > Users, crie manualmente a conta administrativa da equipe.
+6. Abra Authentication > Providers > Email e confirme que o provedor Email está habilitado.
+7. Para manter os dois comentários de demonstração do antigo JSON, execute opcionalmente SUPABASE_IMPORTAR_COMENTARIOS.sql.
+8. Publique os arquivos atualizados do projeto no mesmo host onde o site já está hospedado.
+
+IMPORTANTE SOBRE SEGURANÇA
+- A Publishable Key é pública e foi feita para uso no navegador.
+- Não coloque sb_secret_... ou service_role no frontend.
+- A chave secreta anteriormente compartilhada deve ser revogada no painel Supabase.
+- O SQL de permissões pressupõe que cadastros públicos estejam desativados e que somente a conta administrativa seja criada manualmente.
+- O formulário público permite envio imediato e os comentários ficam públicos. Se quiser moderação antes de exibir, será necessário adicionar status/aprovação.
+
+TESTE
+- Abra o site publicado, envie uma manifestação e confirme que ela aparece no Supabase > Table Editor > comentarios.
+- Abra o site em outro navegador/dispositivo e confirme que a mesma manifestação aparece.
+- Entre em /admin.html com o e-mail e a senha criados no Supabase Auth para responder/editar/excluir.

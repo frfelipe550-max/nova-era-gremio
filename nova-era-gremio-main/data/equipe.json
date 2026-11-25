@@ -1,0 +1,68 @@
+{
+  "integrantes": [
+    {
+      "id": "membro-01",
+      "nome": "Alicia",
+      "turma": "Chapa Nova Era",
+      "cargo": "Vice-Secretária Geral",
+      "foto": "./assets/membros/alicia.jpeg",
+      "descricao": "Vice-Secretária Geral da chapa Nova Era, apoiando a secretaria e o acompanhamento das demandas estudantis."
+    },
+    {
+      "id": "membro-02",
+      "nome": "Otávio",
+      "turma": "Chapa Nova Era",
+      "cargo": "Secretário Geral",
+      "foto": "./assets/membros/otavio.jpeg",
+      "descricao": "Secretário Geral da chapa Nova Era, responsável pela organização das pautas e atuação geral do Grêmio Estudantil."
+    },
+    {
+      "id": "membro-03",
+      "nome": "Kevelyn",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenadora Artística",
+      "foto": "./assets/membros/kevelyn.jpeg",
+      "descricao": "Responsável por atividades culturais, apresentações, eventos artísticos e valorização dos talentos da escola."
+    },
+    {
+      "id": "membro-04",
+      "nome": "Everson",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenador Comunitário",
+      "foto": "./assets/membros/everson.jpeg",
+      "descricao": "Atua na integração da comunidade escolar e em ações solidárias para uma escola ainda melhor."
+    },
+    {
+      "id": "membro-05",
+      "nome": "Serena",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenadora de Convivência Escolar",
+      "foto": "./assets/membros/serena.jpeg",
+      "descricao": "Dedica-se a construir uma escola mais unida, acolhedora e respeitosa para todos os estudantes."
+    },
+    {
+      "id": "membro-06",
+      "nome": "Mateus Trindade",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenador Desportivo",
+      "foto": "./assets/membros/mateus.jpeg",
+      "descricao": "Coordena os jogos interclasses, torneios e iniciativas esportivas do Grêmio Estudantil."
+    },
+    {
+      "id": "membro-07",
+      "nome": "Lívia Reginato",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenadora de Saúde e Meio Ambiente",
+      "foto": "./assets/membros/livia.jpeg",
+      "descricao": "Promove ações de bem-estar, conscientização sobre saúde, sustentabilidade e cuidado com o meio ambiente."
+    },
+    {
+      "id": "membro-08",
+      "nome": "Fhellipe",
+      "turma": "Chapa Nova Era",
+      "cargo": "Coordenador de Comunicação",
+      "foto": "./assets/membros/fhellipe.jpeg",
+      "descricao": "Responsável pela comunicação, divulgação nas redes sociais e contato com os estudantes."
+    }
+  ]
+}

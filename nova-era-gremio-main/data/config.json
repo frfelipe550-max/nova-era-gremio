@@ -1,0 +1,26 @@
+{
+  "chapa": {
+    "nome": "NOVA ERA",
+    "subtitulo": "Grêmio Estudantil",
+    "fraseInstitucional": "Representatividade, união e protagonismo estudantil para construir uma escola melhor todos os dias.",
+    "anoReferencia": 2026,
+    "logoPath": "./assets/logo/logo-placeholder.svg"
+  },
+  "redesSociais": {
+    "instagram": {
+      "usuario": "@gremio.novaera.exemplo",
+      "url": "https://www.instagram.com/SEU_PERFIL_OFICIAL"
+    },
+    "facebook": {
+      "pagina": "Grêmio Estudantil Nova Era (Placeholder)",
+      "url": "https://www.facebook.com/SUA_PAGINA_OFICIAL"
+    },
+    "whatsapp": {
+      "numero": "5500000000000",
+      "mensagemInicial": "Olá, chapa Nova Era! Gostaria de conversar com o Grêmio Estudantil."
+    }
+  },
+  "comentariosConfig": {
+    "tamanhoMaximoMensagem": 500
+  }
+}

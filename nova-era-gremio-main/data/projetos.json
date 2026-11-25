@@ -1,0 +1,36 @@
+{
+  "projetos": [
+    {
+      "id": "projeto-01",
+      "titulo": "[Exemplo] Jogos Interclasses Integrados",
+      "categoria": "Esporte",
+      "situacao": "Em andamento",
+      "imagem": "./assets/projetos/placeholder-projeto.svg",
+      "descricao": "Proposta demonstrativa: organização de torneios esportivos entre turmas com foco em fair play, inclusão e participação de todos os turnos."
+    },
+    {
+      "id": "projeto-02",
+      "titulo": "[Exemplo] Rádio Escolar nos Intervalos",
+      "categoria": "Cultura e Lazer",
+      "situacao": "Planejado",
+      "imagem": "./assets/projetos/placeholder-projeto.svg",
+      "descricao": "Proposta demonstrativa: espaço musical e informativo durante os intervalos para divulgar recados, aniversários e talentos da escola."
+    },
+    {
+      "id": "projeto-03",
+      "titulo": "[Exemplo] Caixa de Escuta e Mural Transparente",
+      "categoria": "Comunicação",
+      "situacao": "Concluído",
+      "imagem": "./assets/projetos/placeholder-projeto.svg",
+      "descricao": "Proposta demonstrativa: implantação de canais físicos e digitais para recolher sugestões dos estudantes e divulgar as respostas da chapa."
+    },
+    {
+      "id": "projeto-04",
+      "titulo": "[Exemplo] Revitalização dos Espaços de Convivência",
+      "categoria": "Infraestrutura",
+      "situacao": "Planejado",
+      "imagem": "./assets/projetos/placeholder-projeto.svg",
+      "descricao": "Proposta demonstrativa: mutirão estudantil em diálogo com a direção para melhorar áreas de descanso, leitura e convivência no pátio."
+    }
+  ]
+}

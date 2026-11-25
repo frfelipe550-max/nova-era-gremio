@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Era — Grêmio Estudantil | Participação, União e Transformação</title>
+  <meta name="description" content="Site institucional oficial da chapa Nova Era, eleita para o Grêmio Estudantil. Conheça nossa equipe, propostas, projetos, notícias e envie sua sugestão." />
+  <meta name="theme-color" content="#0F3D82" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Nova Era — Grêmio Estudantil" />
+  <meta property="og:description" content="Uma nova era de participação, união e transformação! Conheça os integrantes, projetos, notícias e participe deixando sua opinião." />
+  <meta property="og:image" content="./assets/logo/logo-placeholder.svg" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Nova Era — Voltar ao início">
+        <div class="brand-logo-slot">
+          <img
+            id="header-logo"
+            src="./assets/logo/logo-placeholder.svg"
+            alt="Espaço reservado para o logotipo oficial da chapa Nova Era"
+            width="48"
+            height="48"
+          />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" id="header-brand-name">NOVA ERA</span>
+          <span class="brand-subtitle" id="header-brand-subtitle">Grêmio Estudantil</span>
+        </div>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        aria-label="Abrir menu de navegação"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#equipe" class="nav-link">Nossa Equipe</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#noticias" class="nav-link">Notícias</a></li>
+          <li><a href="#participacao" class="nav-link">Participação</a></li>
+        </ul>
+        <a href="#participacao" class="btn btn-accent nav-cta">Deixe sua opinião</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="hero" id="inicio">
+      <div class="hero-decor" aria-hidden="true">
+        <svg class="hero-shape hero-shape-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="8 8" />
+          <circle cx="100" cy="100" r="56" fill="currentColor" fill-opacity="0.08" />
+        </svg>
+        <svg class="hero-shape hero-shape-2" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="120" height="120" rx="28" fill="currentColor" fill-opacity="0.1" transform="rotate(15 80 80)" />
+        </svg>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">Chapa Eleita • Gestão <span id="hero-ano">2026</span></span>
+          <h1 class="hero-title">Uma nova era de participação, união e transformação!</h1>
+          <p class="hero-subtitle">
+            Somos a Nova Era, a chapa eleita para representar os estudantes. Nosso compromisso é ouvir,
+            dialogar e construir uma escola cada vez melhor para todos.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#equipe" class="btn btn-accent btn-lg">Conheça nossa equipe</a>
+            <a href="#participacao" class="btn btn-outline-light btn-lg">Envie sua sugestão</a>
+          </div>
+
+          <div class="hero-highlights" aria-label="Pilares da chapa">
+            <div class="hero-highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Escuta ativa dos estudantes</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Transparência nas ações</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="highlight-dot"></span>
+              <span>Projetos culturais, esportivos e sociais</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-logo-frame">
+              <img
+                id="hero-logo"
+                src="./assets/logo/logo-placeholder.svg"
+                alt="Espaço reservado para o logotipo oficial da chapa Nova Era"
+                width="240"
+                height="240"
+              />
+            </div>
+
+            <div class="hero-mini-cards">
+              <div class="mini-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>Representatividade</span>
+              </div>
+              <div class="mini-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <span>Protagonismo</span>
+              </div>
+              <div class="mini-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Diálogo Aberto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="sobre">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Institucional</span>
+          <h2 class="section-title">Conheça a Nova Era</h2>
+          <p class="section-description">
+            Nossa identidade, propósito e os valores que orientam cada decisão do Grêmio Estudantil.
+          </p>
+        </header>
+
+        <div class="sobre-grid">
+          <article class="sobre-story card">
+            <div class="editable-notice" role="note">
+              <strong>Texto demonstrativo editável:</strong> 
+            </div>
+
+            <h3>Nossa história e como surgiu a iniciativa</h3>
+            <p>
+               A chapa nova era surgiu após um grupo de jovens se reunirem e procurar por aprimoramento dentro da escola, cheio de vontade de fazer acontecer novos projetos, novos eventos, e mais incentivo em estudos. A formação da chapa foi bem elaborada por alunos experientes em protagonismo juvenil, hoje somos uma chapa não como qualquer outra, somos uma chapa da era tecnológica a qual trabalha com estatísticas, metas e objetivos diretos, desenvolvemos nosso próprio site da chapa, e estamos desenvolvendo nosso painel de controle administrativo, então assim iniciasse em 2027, Uma nova era, é tempo de melhoria e aprimoramento sempre trabalhando juntos, para que nossa escola continue evoluindo junto com seus alunos.
+            </p>
+
+            <h3>Motivações e objetivos da representação estudantil</h3>
+            <p>
+              Decidimos participar do Grêmio porque acreditamos que a escola é um
+              espaço vivo de convivência, cultura, esporte e cidadania. Nosso objetivo é defender os interesses
+              dos alunos junto à gestão escolar, promover eventos integradores e prestar contas com clareza.
+            </p>
+
+            <h3>Compromisso com a escuta e a participação</h3>
+            <p>
+               Nenhum projeto se sustenta sem a voz de quem vive a escola todos os
+              dias. Por isso, mantemos canais permanentes de diálogo presencial e digital para ouvir críticas,
+              elogios e sugestões de todas as turmas.
+            </p>
+          </article>
+
+          <aside class="sobre-valores">
+            <div class="card valores-intro-card">
+              <h3>Características da nossa equipe</h3>
+              <p>
+                Somos um grupo diverso de estudantes comprometidos com respeito mútuo, organização,
+                responsabilidade e abertura para aprender e construir juntos.
+              </p>
+            </div>
+
+            <h3 class="valores-heading">Nossos 6 Princípios</h3>
+            <div class="principios-grid">
+              <div class="principio-card">
+                <span class="principio-icon" aria-hidden="true">01</span>
+                <div>
+                  <h4>Representatividade</h4>
+                  <p>Dar voz às demandas reais de todas as turmas e turnos com respeito à diversidade.</p>
+                </div>
+              </div>
+              <div class="principio-card">
+                <span class="principio-icon" aria-hidden="true">02</span>
+                <div>
+                  <h4>União</h4>
+                  <p>Fortalecer os laços entre estudantes, professores, funcionários e comunidade escolar.</p>
+                </div>
+              </div>
+              <div class="principio-card">
+                <span class="principio-icon" aria-hidden="true">03</span>
+                <div>
+                  <h4>Transparência</h4>
+                  <p>Compartilhar decisões, reuniões e o andamento de cada projeto de forma clara.</p>
+                </div>
+              </div>
+              <div class="principio-card">
+                <span class="principio-icon" aria-hidden="true">04</span>
+                <div>
+                  <h4>Diálogo</h4>
+                  <p>Ouvir antes de agir, construindo soluções conjuntas por meio da conversa respeitosa.</p>
+                </div>
+              </div>
+              <div class="principio-card">
+                <span class="principio-icon" aria-hidden="true">05</span>
+                <div>
+                  <h4>Criatividade</h4>
+                  <p>Inovar nas atividades culturais, esportivas, solidárias e de comunicação escolar.</p>
+                </div>
+              </div>
+              <div class="principio-card">
+                <span class="principio-icon" aria-hidden="true">06</span>
+                <div>
+                  <h4>Protagonismo estudantil</h4>
+                  <p>Incentivar cada estudante a participar ativamente das melhorias da nossa escola.</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="equipe">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Quem faz acontecer</span>
+          <h2 class="section-title">Nossa Equipe</h2>
+          <p class="section-description">
+            Conheça os integrantes eleitos da chapa Nova Era e suas respectivas funções no Grêmio Estudantil.
+          </p>
+        </header>
+
+        <div id="equipe-status" class="status-message" aria-live="polite"></div>
+        <div id="equipe-grid" class="equipe-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="projetos">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Ações e Compromissos</span>
+          <h2 class="section-title">Projetos e Propostas</h2>
+          <p class="section-description">
+            Acompanhe nossas propostas planejadas, iniciativas em andamento e ações já concluídas.
+          </p>
+        </header>
+
+        <div class="projetos-filtros" role="region" aria-label="Filtros de projetos">
+          <div class="filtro-grupo">
+            <label for="filtro-categoria" class="filtro-label">Categoria:</label>
+            <select id="filtro-categoria" class="filtro-select">
+              <option value="todas">Todas as categorias</option>
+            </select>
+          </div>
+
+          <div class="filtro-grupo">
+            <span class="filtro-label">Situação:</span>
+            <div class="filtro-pills" id="projetos-filtros-situacao" role="group" aria-label="Filtrar por situação">
+              <button type="button" class="pill-btn active" data-situacao="todas">Todas</button>
+              <button type="button" class="pill-btn" data-situacao="Planejado">Planejado</button>
+              <button type="button" class="pill-btn" data-situacao="Em andamento">Em andamento</button>
+              <button type="button" class="pill-btn" data-situacao="Concluído">Concluído</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="projetos-status" class="status-message" aria-live="polite"></div>
+        <div id="projetos-grid" class="projetos-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="noticias">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Transparência e Informação</span>
+          <h2 class="section-title">Notícias e Atualizações</h2>
+          <p class="section-description">
+            Fique por dentro das reuniões, eventos, comunicados oficiais e novidades do Grêmio Estudantil.
+          </p>
+        </header>
+
+        <div id="noticias-status" class="status-message" aria-live="polite"></div>
+        <div id="noticias-grid" class="noticias-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="participacao">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Voz do Estudante</span>
+          <h2 class="section-title">Participação Estudantil</h2>
+          <p class="section-description">
+            Este espaço é seu! Envie opiniões, sugestões de projetos, críticas construtivas ou elogios.
+          </p>
+        </header>
+
+        <div class="participacao-layout">
+          <div class="card form-card">
+            <h3>Envie sua manifestação</h3>
+
+            <div class="moderation-alert" role="note">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <div>
+                <strong>Como funciona a publicação:</strong>
+                <p>
+                  As manifestações são enviadas ao banco de dados online da Nova Era. Depois de registradas,
+                  ficam disponíveis para todos os visitantes do site. A equipe administra respostas e alterações
+                  pelo painel administrativo.
+                </p>
+              </div>
+            </div>
+
+            <form id="form-comentario" novalidate>
+              <div class="form-group">
+                <label for="comentario-nome">Nome do estudante <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="comentario-nome"
+                  name="nome"
+                  maxlength="80"
+                  placeholder="Ex.: Maria Clara Silva"
+                  required
+                />
+                <span class="field-error" id="erro-nome" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="comentario-turma">Turma <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="comentario-turma"
+                  name="turma"
+                  maxlength="40"
+                  placeholder="Ex.: 2º Ano B"
+                  required
+                />
+                <span class="field-error" id="erro-turma" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <div class="label-row">
+                  <label for="comentario-mensagem">Comentário ou sugestão <span class="required">*</span></label>
+                  <span class="char-counter" id="comentario-contador">0 / 500</span>
+                </div>
+                <textarea
+                  id="comentario-mensagem"
+                  name="mensagem"
+                  rows="5"
+                  maxlength="500"
+                  placeholder="Escreva aqui sua ideia, sugestão de evento, melhoria para a escola ou dúvida para a chapa Nova Era..."
+                  required
+                ></textarea>
+                <span class="field-error" id="erro-mensagem" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Enviar comentário</button>
+
+              <div id="comentario-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <div class="comentarios-panel">
+            <div class="comentarios-toolbar">
+              <div>
+                <h3>Manifestações e Respostas</h3>
+                <p class="comentarios-count" id="comentarios-total">Carregando manifestações...</p>
+              </div>
+              <a href="./admin.html" class="admin-subtle-link" title="Acesso da equipe para moderação e exportação JSON">
+                Painel da Equipe
+              </a>
+            </div>
+
+            <div id="comentarios-status" class="status-message" aria-live="polite"></div>
+            <div id="comentarios-lista" class="comentarios-lista"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-social" id="contato">
+      <div class="container">
+        <header class="section-header section-header-light">
+          <span class="section-eyebrow section-eyebrow-light">Canais Oficiais</span>
+          <h2 class="section-title">Conecte-se com a Nova Era</h2>
+          <p class="section-description">
+            Acompanhe nossas divulgações diárias, registros de eventos e fale diretamente com a chapa pelas redes sociais.
+          </p>
+        </header>
+
+        <div class="social-cards-grid">
+          <a id="social-instagram" href="#" target="_blank" rel="noopener noreferrer" class="social-card social-instagram">
+            <div class="social-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div>
+              <h3>Instagram</h3>
+              <p id="social-instagram-user">@gremio.novaera.exemplo</p>
+              <span class="social-action">Seguir perfil &rarr;</span>
+            </div>
+          </a>
+
+          <a id="social-facebook" href="#" target="_blank" rel="noopener noreferrer" class="social-card social-facebook">
+            <div class="social-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Facebook</h3>
+              <p id="social-facebook-page">Página Oficial Nova Era</p>
+              <span class="social-action">Acessar página &rarr;</span>
+            </div>
+          </a>
+
+          <a id="social-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="social-card social-whatsapp">
+            <div class="social-icon-wrap" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>WhatsApp</h3>
+              <p id="social-whatsapp-desc">Atendimento rápido com mensagem pronta</p>
+              <span class="social-action">Iniciar conversa &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-head">
+          <div class="brand-logo-slot">
+            <img
+              id="footer-logo"
+              src="./assets/logo/logo-placeholder.svg"
+              alt="Espaço reservado para o logotipo oficial da chapa Nova Era"
+              width="52"
+              height="52"
+            />
+          </div>
+          <div>
+            <strong class="footer-title" id="footer-brand-name">NOVA ERA</strong>
+            <span class="footer-subtitle">Grêmio Estudantil</span>
+          </div>
+        </div>
+        <p class="footer-phrase" id="footer-frase">
+          Representatividade, união e protagonismo estudantil para construir uma escola melhor todos os dias.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Conheça a Nova Era</a></li>
+          <li><a href="#equipe">Nossa Equipe</a></li>
+          <li><a href="#projetos">Projetos e Propostas</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#participacao">Participação Estudantil</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social-col">
+        <h4>Redes Sociais e Gestão</h4>
+        <div class="footer-social-icons" id="footer-social-icons">
+          <a id="footer-instagram" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Nova Era">Instagram</a>
+          <a id="footer-facebook" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Nova Era">Facebook</a>
+          <a id="footer-whatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Nova Era">WhatsApp</a>
+        </div>
+        <a href="./admin.html" class="footer-admin-btn">Acessar Painel Administrativo</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>
+          Iniciativa do <strong>Grêmio Estudantil — Chapa Nova Era</strong> • Ano de referência:
+          <span id="footer-ano">2026</span>.
+        </p>
+        <p class="footer-tech-note">Portal institucional 100% estático e transparente.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="noticia-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="noticia-modal-titulo" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="noticia-modal-fechar" aria-label="Fechar notícia">&times;</button>
+      <div id="noticia-modal-meta" class="modal-meta"></div>
+      <h3 id="noticia-modal-titulo" class="modal-title"></h3>
+      <img id="noticia-modal-imagem" class="modal-image" src="" alt="" hidden />
+      <div id="noticia-modal-conteudo" class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./js/supabase-config.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/equipe.js"></script>
+  <script src="./js/projetos.js"></script>
+  <script src="./js/noticias.js"></script>
+  <script src="./js/comentarios.js"></script>
+</body>
+</html>
